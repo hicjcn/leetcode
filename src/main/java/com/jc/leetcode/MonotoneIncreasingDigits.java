@@ -31,6 +31,13 @@ public class MonotoneIncreasingDigits {
     public static void main(String[] args) {
         System.out.println(monotoneIncreasingDigits(332));
     }
+
+    /**
+     * 从右向左扫描数字，若发现当前数字比其左边一位（较高位）小，
+     * 则把其左边一位数字减1，并将该位及其右边的所有位改成9
+     * @param N
+     * @return
+     */
     public static int monotoneIncreasingDigits(int N) {
         int i = 1;
         int res = N;
